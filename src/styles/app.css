@@ -1,0 +1,32 @@
+:root {
+	--font-style: 'Courier New', Courier, monospace;
+}
+
+.app {
+
+}
+
+.header {
+	font-family: var(--font-style);
+	border: 1px solid black;
+}
+
+.project-nav {
+	border: 1px solid blue;
+}	
+
+.project-nav li {
+	list-style-type: none;
+}
+
+.task-nav {
+	border: 1px solid red;
+}	
+
+.task-nav li {
+	list-style-type: none;
+}
+
+.content-pane {
+	border: 1px solid green;
+}
