@@ -1,32 +1,19 @@
 :root {
 	--font-style: 'Courier New', Courier, monospace;
+
+	--app-bg-color: #596363;
+	--header-bg-color: #DCFDFC;
+	--core-border-color: #71807f;
+	--core-btn-color: #A1B5B4;
+	--hl-btn-color: #CAE3E2;
+	--nav-bg-color: #98B2B3;
 }
 
 .app {
-
+	background-color: var(--app-bg-color);
+	display: flex;
 }
 
-.header {
-	font-family: var(--font-style);
-	border: 1px solid black;
-}
-
-.project-nav {
-	border: 1px solid blue;
-}	
-
-.project-nav li {
-	list-style-type: none;
-}
-
-.task-nav {
-	border: 1px solid red;
-}	
-
-.task-nav li {
-	list-style-type: none;
-}
-
-.content-pane {
-	border: 1px solid green;
+body > #root > div {
+  height: 100vh;
 }

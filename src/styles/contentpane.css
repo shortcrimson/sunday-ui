@@ -1,0 +1,12 @@
+.content-pane {
+	background-color: var(--nav-bg-color);
+	border-radius: 5px;
+	font-family: var(--font-style);
+	height: 100%;	
+}
+
+@media all and (max-width: 575px) {
+	.content-pane {
+		margin-top: 10px;
+	}
+}

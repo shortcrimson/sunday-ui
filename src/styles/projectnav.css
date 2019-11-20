@@ -1,0 +1,39 @@
+.project-nav {
+	font-family: var(--font-style);
+	background-color: var(--nav-bg-color);
+	border-radius: 5px;
+	
+}	
+
+.project-nav li {
+	list-style-type: none;
+	width: 100%;
+}
+
+.project-nav li:hover {
+	background-color: var(--hl-btn-color);
+	transition: background-color 0.15s
+}
+
+.project-nav-title {
+	text-align: center;
+	width: 100%;
+	border-bottom: 1px solid var(--core-border-color);
+}
+
+.project-list, .task-list {
+	height: 100%;
+	width: 100%;
+	padding-top: 5px;
+}
+
+.project-list {
+	border-right: 1px solid var(--core-border-color);
+}
+
+
+@media all and (min-width: 576px) {
+	.project-nav {
+		margin-right: 10px;
+	}
+}

@@ -1,0 +1,27 @@
+.header {
+	font-family: var(--font-style);
+	border: 1px solid var(--core-border-color);
+	background-color: var(--header-bg-color);
+	width: 100%;
+	border-radius: 0px 0px 10px 10px;
+	margin-bottom: 10px
+}
+
+.title {
+	padding: 15px 10px;
+	text-decoration: underline;
+}
+
+.header-control {
+	float: right;
+	margin: 10px;
+	padding: 5px;
+	background-color: var(--core-btn-color);
+	border: 1px solid var(--core-btn-color);
+	border-radius: 5px;
+}
+
+.header-control:hover {
+	background-color: var(--hl-btn-color);
+	border: 1px solid var(--core-btn-color);
+}
