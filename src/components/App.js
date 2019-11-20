@@ -13,6 +13,7 @@ function App() {
       <div className="app">
           <Container fluid={true}>
               <Row>
+								<p>Hello, World!</p>
                   <Header />
               </Row>
               <Row>
