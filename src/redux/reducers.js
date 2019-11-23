@@ -1,10 +1,19 @@
 import { combineReducers } from 'redux';
 
-import { ADD_PROJECT, ADD_TASK } from './actions';
+import * as actions from './actions';
+
+function loginUpdate(state = false, action) {
+	switch(action.type) {
+		case actions.SET_LOGIN:
+			return action.isLoggedIn;
+		default:
+			return state;
+	}
+}
 
 function projectListUpdate(state = [], action) {
 	switch (action.type) {
-		case ADD_PROJECT:
+		case actions.ADD_PROJECT:
 			return [
 				...state,
 				{
@@ -19,7 +28,7 @@ function projectListUpdate(state = [], action) {
 
 function taskListUpdate(state = [], action) {
 	switch(action.type) {
-		case ADD_TASK:
+		case actions.ADD_TASK:
 			return [
 				...state,
 				{
@@ -33,6 +42,7 @@ function taskListUpdate(state = [], action) {
 }
 
 const projectApp = combineReducers({
+	isLoggedIn: loginUpdate,
 	projects: projectListUpdate,
 	tasks: taskListUpdate
 });

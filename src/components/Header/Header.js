@@ -16,8 +16,14 @@ class Header extends Component {
                         </Col>
                         <Col>
                             <div className="header-control">
-															<p>Settings</p>
+															{!this.props.isLoggedIn && (
+																	<button onClick={this.props.onLoginClick}>Login</button>
+															)}
+															{this.props.isLoggedIn && (
+																	<button onClick={this.props.onLogoutClick}>Logout</button>
+															)}
                             </div>
+                            
                         </Col>
                     </Row>
                 </Container>

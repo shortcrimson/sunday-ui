@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ReactReduxContent } from 'react-redux';
 
-import Header from "../Header/Header";
+import HeaderControl from "../Header/HeaderControl";
 // import ProjectNav from "./ProjectNav";
 import NavControl from "../Nav/NavControl";
 import ContentPane from "../Content/ContentPane";
@@ -24,7 +24,7 @@ class App extends Component {
             <div className="app">
                 <Container fluid={true}>
                     <Row noGutters={true}>
-                        <Header />
+                        <HeaderControl />
                     </Row>
                     <Row noGutters={true}>
                         <Col sm={4} as={"navbar"}>

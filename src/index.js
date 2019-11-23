@@ -32,5 +32,5 @@ function setInitialState() {
 	.then(res => res.forEach(task => store.dispatch(addTask(task))));
 }
 
-// const unsub = store.subscribe(() => console.log(store.getState()));
+const unsub = store.subscribe(() => console.log(store.getState()));
 // unsub();
