@@ -1,13 +1,23 @@
 .project-nav {
 	font-family: var(--font-style);
 	background-color: var(--nav-bg-color);
-	border-radius: 5px;
-	
+	border-right: 1px solid var(--core-border-color);
+	font-size: 0.8em;
 }	
+
+.project-nav .container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.project-nav ul {
+	padding-left: 0px;
+}
 
 .project-nav li {
 	list-style-type: none;
 	width: 100%;
+	padding-left: 5px;
 }
 
 .project-nav li:hover {
@@ -16,9 +26,9 @@
 }
 
 .project-nav-title {
-	text-align: center;
 	width: 100%;
-	border-bottom: 1px solid var(--core-border-color);
+	box-shadow: 0px 2px 2px grey;
+	z-index: 10;
 }
 
 .project-list, .task-list {
@@ -28,9 +38,21 @@
 }
 
 .project-list {
-	border-right: 1px solid var(--core-border-color);
+	box-shadow: 2px 0px 2px grey;
+	position: relative;
+	z-index: 10;
 }
 
+.project-list li:focus {
+	background-color: var(--hl-btn-color);
+	outline: none;
+}
+
+.task-list {
+	background-color: var(--nav-task-bg-color);
+	position: relative;
+	z-index: 0;
+}
 
 @media all and (min-width: 576px) {
 	.project-nav {

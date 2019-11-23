@@ -9,27 +9,27 @@ class ProjectNav extends Component {
             <div className="project-nav">
                 <Container fluid={true}>
                     <Row noGutters={true}>
-											<div className="project-nav-title">
-												<h5>Projects</h5>
-											</div>
-										</Row>
+                        <div className="project-nav-title">
+                            <h5>Projects</h5>
+                        </div>
+                    </Row>
                     <Row noGutters={true}>
                         <Col>
                             <div className="project-list">
                                 <ul>
-                                    <li>Tidying House</li>
-                                    <li>Work</li>
-                                    <li>Random</li>
+                                    <li tabindex="0">Tidying House</li>
+                                    <li tabindex="0">Work</li>
+                                    <li tabindex="0">Random</li>
                                 </ul>
                             </div>
                         </Col>
                         <Col>
                             <div className="task-list">
                                 <ul>
-                                    <li>Take bin out</li>
-                                    <li>Finish work</li>
-                                    <li>Learn to Fly</li>
-                                    <li>Get a beer</li>
+                                    <li tabindex="0">Take bin out</li>
+                                    <li tabindex="0">Finish work</li>
+                                    <li tabindex="0">Learn to Fly</li>
+                                    <li tabindex="0">Get a beer</li>
                                 </ul>
                             </div>
                         </Col>

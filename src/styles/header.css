@@ -1,10 +1,8 @@
 .header {
 	font-family: var(--font-style);
-	border: 1px solid var(--core-border-color);
+	border-bottom: 1px solid var(--core-border-color);
 	background-color: var(--header-bg-color);
 	width: 100%;
-	border-radius: 0px 0px 10px 10px;
-	margin-bottom: 10px
 }
 
 .title {
@@ -16,8 +14,8 @@
 	float: right;
 	margin: 10px;
 	padding: 5px;
-	background-color: var(--core-btn-color);
-	border: 1px solid var(--core-btn-color);
+	background-color: var(--ui-btn-color);
+	border: 1px solid var(---btn-color);
 	border-radius: 5px;
 }
 

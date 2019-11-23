@@ -1,19 +1,34 @@
 :root {
-	--font-style: 'Courier New', Courier, monospace;
-
+	--font-style: "Lucida Console", Monaco, monospace;
+	/* Background colors */
 	--app-bg-color: #596363;
 	--header-bg-color: #DCFDFC;
-	--core-border-color: #71807f;
-	--core-btn-color: #A1B5B4;
-	--hl-btn-color: #CAE3E2;
 	--nav-bg-color: #98B2B3;
+	--nav-task-bg-color: #ADCBCC;
+	--content-bg-color: #ffffff;
+	/* Highlight colors */
+	--core-border-color: #71807f;
+	--ui-btn-color: #A1B5B4;
+	--hl-btn-color: #CAE3E2;
+
+
+}
+
+body > #root > div {
+  height: 100vh;
 }
 
 .app {
 	background-color: var(--app-bg-color);
 	display: flex;
+	margin-left: -15px;
+	margin-right: -15px;
 }
 
-body > #root > div {
-  height: 100vh;
+navbar {
+	margin-left: 5px;
+}
+
+content {
+	margin-left: -10px;
 }

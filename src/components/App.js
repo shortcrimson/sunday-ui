@@ -15,10 +15,10 @@ function App() {
                     <Header />
                 </Row>
                 <Row noGutters={true}>
-                    <Col sm={4}>
+                    <Col sm={4} as={'navbar'}>
                         <ProjectNav />
                     </Col>
-                    <Col sm={8}>
+                    <Col sm={8} as={'content'}>
                         <ContentPane />
                     </Col>
                 </Row>
