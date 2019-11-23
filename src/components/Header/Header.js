@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import '../styles/header.css';
+import '../../styles/header.css';
 
 class Header extends Component {
     render() {
@@ -15,7 +15,7 @@ class Header extends Component {
                             </div>
                         </Col>
                         <Col>
-                            <div class="header-control">
+                            <div className="header-control">
 															<p>Settings</p>
                             </div>
                         </Col>

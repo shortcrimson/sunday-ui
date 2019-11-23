@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Editor } from 'slate-react';
 import { Value } from 'slate';
 
-import "../styles/contentpane.css";
+import "../../styles/contentpane.css";
 
 // Create our initial value...
 const initialValue = Value.fromJSON({

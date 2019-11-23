@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import "../styles/projectnav.css";
+import "../../styles/projectnav.css";
 
 class ProjectNav extends Component {
     render() {
@@ -17,11 +17,8 @@ class ProjectNav extends Component {
                         <Col>
                             <div className="project-list">
                                 <ul>
-                                    <li tabindex="0">Tidying House</li>
-                                    <li tabindex="0">Work</li>
-                                    <li tabindex="0">Random</li>
 																		{this.props.projects.map(prj => 
-																			<li tabindex="0">{prj.name}</li>
+																			<li tabIndex="0" key={prj._id}>{prj.name}</li>
 																		)}
                                 </ul>
                             </div>
@@ -29,10 +26,9 @@ class ProjectNav extends Component {
                         <Col>
                             <div className="task-list">
                                 <ul>
-                                    <li tabindex="0">Take bin out</li>
-                                    <li tabindex="0">Finish work</li>
-                                    <li tabindex="0">Learn to Fly</li>
-                                    <li tabindex="0">Get a beer</li>
+																	{this.props.tasks.map(task =>
+																		<li tabIndex="0" key={task._id}>{task.description}</li>	
+																	)}
                                 </ul>
                             </div>
                         </Col>

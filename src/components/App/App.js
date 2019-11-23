@@ -1,21 +1,23 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { ReactReduxContent } from 'react-redux';
 
-import Header from "./Header";
+import Header from "../Header/Header";
 // import ProjectNav from "./ProjectNav";
-import NavControl from '../containers/NavControl';
-import ContentPane from "./ContentPane";
+import NavControl from "../Nav/NavControl";
+import ContentPane from "../Content/ContentPane";
 
-import "../styles/app.css";
+import "../../styles/app.css";
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.setState({});
+		}
+		
+		componentDidMount() {
 
-	constructor(props) {
-		super(props);
-		this.setState({
-
-		});
-	}
+		}
 
     render() {
         return (

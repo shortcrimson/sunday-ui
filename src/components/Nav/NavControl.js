@@ -1,10 +1,11 @@
 import { connect } from 'react-redux';
 
-import ProjectNav from '../components/ProjectNav';
+import ProjectNav from './ProjectNav';
 
 const mapStateToProps = (state, ownProps) => {
 	return {
-		projects: state.projects
+		projects: state.projects,
+		tasks: state.tasks
 	};
 }
 
