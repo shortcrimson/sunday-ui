@@ -20,6 +20,9 @@ class ProjectNav extends Component {
                                     <li tabindex="0">Tidying House</li>
                                     <li tabindex="0">Work</li>
                                     <li tabindex="0">Random</li>
+																		{this.props.projects.map(prj => 
+																			<li tabindex="0">{prj.name}</li>
+																		)}
                                 </ul>
                             </div>
                         </Col>
